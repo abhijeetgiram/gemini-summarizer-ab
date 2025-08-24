@@ -46,9 +46,9 @@ export async function POST(req) {
     }
 
     const data = await response.json();
-    console.log("----------------------------");
-    console.log("Full Gemini API Response:", JSON.stringify(data, null, 2));
-    console.log("----------------------------");
+    // console.log("----------------------------");
+    // console.log("Full Gemini API Response:", JSON.stringify(data, null, 2));
+    // console.log("----------------------------");
     const summary =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
       "No summary available.";
